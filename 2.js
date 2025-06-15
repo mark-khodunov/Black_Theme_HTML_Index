@@ -11,9 +11,8 @@ modal3.style.height = '850px';
 modal3.style.display = 'flex';
 btn.style.margin = '0 0 0 0';
 
-btn.onclick = function()
-    {
-    if  (   modal1.style.display === 'none')
+btn.onclick = function(){
+    if  (modal1.style.display === 'none')
         {
             modal1.style.display = 'flex';
             modal2.style.display = 'flex';
@@ -29,8 +28,9 @@ btn.onclick = function()
             modal3.style.height = '850px';
             modal3.style.display = 'flex';
             btn.style.margin = '0 0 0 -400px';
-        };
-    }
+        }
+    
+  };
 
 const modal4 = document.querySelector('#m0');
 const m10 = document.querySelector('#m10');
@@ -45,69 +45,65 @@ const mo04 = document.querySelector('#m04');
 const mo05 = document.querySelector('#m05');
 const mo06 = document.querySelector('#m06');
 
-modal4.addEventListener('mouseover', function() {
-  modal5.style.display = "flex";
-  modal5.style.position = "absolute";
-  modal5.innerText = "Dashboard";
-});
+            modal4.addEventListener('mouseover', function() {
+            modal5.style.display = "flex";
+            modal5.style.position = "absolute";
+            modal5.innerText = "Dashboard";
+          });
+            modal4.addEventListener('mouseout', function() {
+            modal5.style.display = "none";
+            modal5.style.position = "none";
+          });
 
-modal4.addEventListener('mouseout', function() {
-  modal5.style.display = "none";
-  modal5.style.position = "none";
-});
+            m10.addEventListener('mouseover', function() {
+            mo02.style.display = "flex";
+            mo02.style.position = "absolute";
+            mo02.innerText = "Sales";
+          });
+            m20.addEventListener('mouseover', function() {
+            mo03.style.display = "flex";
+            mo03.style.position = "absolute";
+            mo03.innerText = "Costs";
+          });
+            m30.addEventListener('mouseover', function() {
+            mo04.style.display = "flex";
+            mo04.style.position = "absolute";
+            mo04.innerText = "Payments";
+          });
+            m40.addEventListener('mouseover', function() {
+            mo05.style.display = "flex";
+            mo05.style.position = "absolute";
+            mo05.innerText = "Finances";
+          });
+            m50.addEventListener('mouseover', function() {
+            mo06.style.display = "flex";
+            mo06.style.position = "absolute";
+            mo06.innerText = "Messages";
+          });
+          m10.addEventListener('mouseout', function() {
+            mo02.style.display = "none";
+            mo02.style.position = "none";
+          });
+          m20.addEventListener('mouseout', function() {
+            mo03.style.display = "none";
+            mo03.style.position = "none";
+          });
+          m30.addEventListener('mouseout', function() {
+            mo04.style.display = "none";
+            mo04.style.position = "none";
+          });
+          m40.addEventListener('mouseout', function() {
+            mo05.style.display = "none";
+            mo05.style.position = "none";
+          });
+          m50.addEventListener('mouseout', function() {
+            mo06.style.display = "none";
+            mo06.style.position = "none";
+          });
 
-m10.addEventListener('mouseover', function() {
-  mo02.style.display = "flex";
-  mo02.style.position = "absolute";
-  mo02.innerText = "Sales";
-});
 
-m10.addEventListener('mouseout', function() {
-  mo02.style.display = "none";
-  mo02.style.position = "none";
-});
 
-m20.addEventListener('mouseover', function() {
-  mo03.style.display = "flex";
-  mo03.style.position = "absolute";
-  mo03.innerText = "Costs";
-});
 
-m20.addEventListener('mouseout', function() {
-  mo03.style.display = "none";
-  mo03.style.position = "none";
-});
 
-m30.addEventListener('mouseover', function() {
-  mo04.style.display = "flex";
-  mo04.style.position = "absolute";
-  mo04.innerText = "Payments";
-});
 
-m30.addEventListener('mouseout', function() {
-  mo04.style.display = "none";
-  mo04.style.position = "none";
-});
-
-m40.addEventListener('mouseover', function() {
-  mo05.style.display = "flex";
-  mo05.style.position = "absolute";
-  mo05.innerText = "Finances";
-});
-
-m40.addEventListener('mouseout', function() {
-  mo05.style.display = "none";
-  mo05.style.position = "none";
-});
-
-m50.addEventListener('mouseover', function() {
-  mo06.style.display = "flex";
-  mo06.style.position = "absolute";
-  mo06.innerText = "Messages";
-});
-
-m50.addEventListener('mouseout', function() {
-  mo06.style.display = "none";
-  mo06.style.position = "none";
-});
 
